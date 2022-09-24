@@ -1,0 +1,80 @@
+@import url('../fonts/averta/stylesheet.css');
+@import url('../fonts/mono/stylesheet.css');
+
+:root{
+    --backdrop-filter: saturate(180%) blur(20px);
+    --page-nav-dark-color: rgba(29,29,31,0.72);
+    --page-nav-light-color: rgba(255,255,255,0.72);
+    /* --apple-web-link: rgb(0, 102, 204);
+    --apple-web-red: rgb(246, 62, 84);
+    --apple-web-dark-blue: rgb(13, 19, 135);
+    --apple-web-blue: rgb(2, 127, 255);
+    --apple-web-light-blue: rgb(136, 118, 254);
+    --apple-web-dark-teal: rgb(4, 156, 183);
+    --apple-web-orange: rgb(230, 103, 2);
+    --apple-web-dark-purple: rgb(141, 18, 135);
+    --apple-web-purple: rgb(101, 41, 248);
+    --apple-web-purple-2: rgb(215, 27, 206);
+    --apple-web-turquoise: rgb(34, 148, 177);
+    --apple-web-dark-green: rgb(12, 157, 70);
+    --apple-web-indigo: rgb(61, 68, 195); */
+}
+/* af52de */
+/* bf5af2 */
+@media (prefers-color-scheme: light){
+    :root{
+        --color-link: #0066cc;
+        --color-red: #ff3b30;
+        --color-orange: #ff9500;
+        --color-yellow: #ffcc00;
+        --color-green: #28cd41;
+        --color-mint: #00c7be;
+        --color-teal: #59adc4;
+        --color-cyan: #55bef0;
+        --color-blue: #007aff;
+        --color-indigo: #5856d6;
+        --color-purple: #af52de;
+        --color-pink: #ff2d55;
+        --color-brown: #a2845e;
+        --color-grey: #8e8e93;
+    }
+}
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --color-link: #2997ff;
+        --color-red: #ff453a;
+        --color-orange: #ff9f0a;
+        --color-yellow: #ffd60a;
+        --color-green: #32d74b;
+        --color-mint: #66d4cf;
+        --color-teal: #6ac4dc;
+        --color-cyan: #5ac8f5;
+        --color-blue: #0a84ff;
+        --color-indigo: #5e5ce6;
+        --color-purple: #bf5af2;
+        --color-pink: #ff375f;
+        --color-brown: #ac8e68;
+        --color-grey: #98989ds;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    -webkit-tap-highlight-color: transparent;
+    margin: auto;
+    overflow-y: scroll;
+    overflow-X: auto;
+    font-size: 16px;
+    color: #1d1d1f;
+    font-smooth: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: auto;
+}

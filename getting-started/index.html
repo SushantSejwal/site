@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+    <title>Template</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../src/css/global.css">
+    <link rel="stylesheet" href="../src/css/nav.css">
+    <link rel="stylesheet" href="../src/css/side-nav.css">
+</head>
+<body>
+
+    <!-- top Navigation bar -->
+    <nav id="top-nav" class="top-nav">
+        <div class="nav-items">
+            <!-- Hamburger menu -->
+            <div class="hamburger-menu-wrapper" id="hamburger-menu-wrapper">
+                <div class="hamburger-menu">
+                    <div class="hamburger-top-crust hamburger-line"></div>
+                    <div class="hamburger-middle-patty hamburger-line"></div>
+                    <div class="hamburger-bottom-crust hamburger-line"></div>
+                </div>
+            </div>
+
+            <div class="nav-left">
+                <div class="nav-logo">
+                    <a href="#" id="nav-logo-anchor" class="nav-logo-anchor">
+                        <svg class="nav-svg nav-svg-logo" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300.14 192.98"><path class="cls-1" d="M40,505.17c-1.27-16.24,14.47-29.7,29.45-34.52,10.15-3.3,19.29-9.39,28.43-15.23,11.93-7.62,20.81-17.52,30-23.61a10.14,10.14,0,0,1,8.89-1c9.9,3.3,8.37,16.76,5.83,29.71-1,4.56.51,3.55,3.56,4.06,7.61.5,25.13.76,28.94,2.28,4.06,1.52,6.85,5.33,6.34,9.14a7.75,7.75,0,0,1-7.87,6.85c-29.44-1-2,.26-30.71-1.52-6.09-.51-6.09-.51-8.63,5.08A139.59,139.59,0,0,1,124,505.17c-9.9,15.23-28.68,28.94-46.45,28.94S41.27,521.93,40,505.17Zm76.66-21.58c.76-2,1.27-2.79-5.58-2.79-15,0-24.88,1.53-34.78,5.33-10.15,4.07-20,11.17-19.29,18,.76,7.61,13.2,12.94,20.31,12.94C92.8,517.1,110.06,500.6,116.66,483.59Zm8.89-25.13a5.55,5.55,0,0,0,.25-2.79c-2.79,2-5.33,4.32-7.87,6.35-1.78,1.27-1.52,1.27,1.27,1.27C124.28,463.29,124,462.78,125.55,458.46Z" transform="translate(-39.93 -344.17)"/><path class="cls-1" d="M170.47,464.81c8.64-32.24,23.87-65.49,44.43-88.08,8.88-9.65,20.56-18.53,31-18.53,11.93,0,14.47,11.93,11.42,22.59-7.62,25.89-32,59.91-52.29,82-7.36,8.12-20.31,16.25-20.82,19.55-2.79,17-4.57,32.74,2.54,37.31,4.32,2.29,11.68-2.28,17-6.6,9.39-8.12,16.24-17.51,21.83-25.64,9.14-13.45,14.72-23.35,22.59-19.29A8.05,8.05,0,0,1,252,477c-2.79,12.18-23.61,36.55-36.3,48.48-6.35,5.84-16.75,11.68-24.37,11.68C159.05,537.16,161.34,498.83,170.47,464.81Zm69.3-86.56c-5.07,1.78-10.4,7.87-14.46,12.18-12.19,13.2-35.54,60.16-32,60.16C201.19,450.59,243.84,378.25,239.77,378.25Z" transform="translate(-39.93 -344.17)"/><path class="cls-1" d="M238.25,498.57c-.76-19,1.52-39.34,7.36-61.94,5.08-19,11.93-34.52,11.93-36.3,0-3-49.25-.25-54.07-2.28-3.81-1.78-5.33-4.57-5.33-7.87,0-10.41,14.72-8.38,32-8.38,20.31,0,26.66-.25,31.23,0,4.06.26,6.09-1,8.12-4.57,6.85-12.18,20-28.17,30.21-32,7.36-2.79,14.72,0,17.77,6.6,4.06,8.88,2,13.71-.76,26.65-.51,3.05-.26,3.56,2.79,3.56,11.68,0,20,.5,20.56,8.12.76,10.41-13.71,9.39-26.15,8.88-3.8-.25-6.09,1-7.87,4.83a161.63,161.63,0,0,1-19.54,31c-12.44,15.48-29.7,30.71-30.21,34.52-1.52,17-2.54,31.48,1.78,38.33,2.28,3.81,5.58,4.82,9.64,3.05,9.9-4.57,18.53-17,26.91-27.93,7.87-11.42,11.17-18.53,19.29-14.21a8,8,0,0,1,3.56,9.64c-1.78,5.08-22.34,32.75-29.45,39.1-7.36,6.34-16,11.42-24.11,11.42C248.66,528.78,239,514.82,238.25,498.57Zm50.51-99c0-.51-4.31-.51-5.58-.51-5.08,0-6.35.51-7.62,3.05a207.5,207.5,0,0,0-11.67,33.25S288.76,404.14,288.76,399.57Zm13.46-34.77c0-4.32-13.2,13.2-14.73,16.24,0,1,1.78,1,8.38.76C299.93,381,302.22,368.86,302.22,364.8Z" transform="translate(-39.93 -344.17)"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav-middle">
+                <ul class="nav-list">
+                    <li class="nav-list-item nav-list-item-1">
+                        <a href="#" class="nav-list-item-anchor nav-list-item-anchor-1">
+                            <span class="nav-list-item-anchor-span nav-list-item-anchor-span-1">Number System</span>
+                        </a>
+                    </li>
+                    <li class="nav-list-item nav-list-item-2">
+                        <a href="#" class="nav-list-item-anchor nav-list-item-anchor-2">
+                            <span class="nav-list-item-anchor-span nav-list-item-anchor-span-2">Boolean Logic</span>
+                        </a>
+                    </li>
+                    <li class="nav-list-item nav-list-item-3">
+                        <a href="#" class="nav-list-item-anchor nav-list-item-anchor-3">
+                            <span class="nav-list-item-anchor-span nav-list-item-anchor-span-3">Python</span>
+                        </a>
+                    </li>
+                    <li class="nav-list-item nav-list-item-4">
+                        <a href="#" id="search-btn" class="nav-list-item-anchor nav-list-item-anchor-4">
+                            <div class="nav-search-btn">
+                                <div class="nav-search-logo">
+                                    <svg class="nav-svg nav-svg-search" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.7608 16.919"><path d="M12.5322,19.0332a6.8735,6.8735,0,0,0,3.7969-1.1426l3.85,3.8584a1.3157,1.3157,0,0,0,.9317.3692,1.3,1.3,0,0,0,.9052-2.1973L18.1924,16.08a6.86,6.86,0,0,0,1.2568-3.9639,6.917,6.917,0,1,0-6.917,6.917Zm0-1.8457a5.0713,5.0713,0,1,1,5.0713-5.0713A5.09,5.09,0,0,1,12.5322,17.1875Z" transform="translate(-5.6152 -5.1992)"/></svg>
+                                </div>
+                                <div class="nav-search-text">Search</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+                <div id="theme-change-btn" class="theme-change-btn">
+                    <div class="light-theme-btn theme-btn">
+                        <svg class="nav-svg nav-svg-light-theme-icon" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.6172 19.6523"><path d="M14.8965,4.6894a.8921.8921,0,1,0-1.7842,0V6.4736a.8921.8921,0,0,0,1.7842,0Zm3.5156,3.27a.8887.8887,0,1,0,1.2656,1.248l1.2657-1.2656a.8887.8887,0,1,0-1.2569-1.2568ZM8.3223,9.207a.8884.8884,0,0,0,1.2568.0088A.9049.9049,0,0,0,9.5879,7.959L8.3223,6.6846a.8887.8887,0,0,0-1.2657,1.248ZM14,8.9873a4.6319,4.6319,0,1,0,4.623,4.6318A4.6609,4.6609,0,0,0,14,8.9873Zm8.9209,5.5283a.8921.8921,0,0,0,0-1.7842H21.1367a.8921.8921,0,0,0,0,1.7842ZM5.0879,12.7314a.8921.8921,0,1,0,0,1.7842H6.8633a.8921.8921,0,1,0,0-1.7842Zm14.581,5.3a.8887.8887,0,0,0-1.248,1.2657l1.2744,1.2656a.8887.8887,0,0,0,1.2481-1.2656ZM7.0566,19.2881a.9052.9052,0,0,0-.0175,1.2568.916.916,0,0,0,1.2656.0176l1.2744-1.2656A.905.905,0,0,0,9.5879,18.04a.916.916,0,0,0-1.2656-.0088Zm7.84,1.4765a.8921.8921,0,0,0-1.7842,0v1.7842a.8921.8921,0,1,0,1.7842,0Z" transform="translate(-4.1914 -3.793)"/></svg>
+                    </div>
+                    <div class="dark-theme-btn theme-btn">
+                        <svg class="nav-svg nav-svg-dark-theme-icon" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.0879 18.9229"><path d="M15.3711,7.01a.2013.2013,0,0,0,.2021-.1846c.2637-1.459.2549-1.4854,1.7666-1.7666.1143-.0264.1934-.0879.1934-.2109a.2166.2166,0,0,0-.1846-.211c-1.5205-.2988-1.4853-.3252-1.7754-1.7578a.2027.2027,0,0,0-.4043-.0088c-.29,1.45-.246,1.4854-1.7666,1.7666a.2169.2169,0,0,0-.1933.211.21.21,0,0,0,.1846.2109c1.5293.3076,1.5117.3164,1.7753,1.7666A.2014.2014,0,0,0,15.3711,7.01Zm4.2275,6.0644a.3354.3354,0,0,0,.334-.3164c.2813-2.3291.3867-2.3994,2.76-2.7685.2109-.0352.334-.1495.334-.3428a.34.34,0,0,0-.2989-.334c-2.3994-.4658-2.5136-.44-2.7949-2.7685a.3395.3395,0,0,0-.6767-.0088c-.2989,2.373-.378,2.4433-2.795,2.7773a.3336.3336,0,0,0-.2988.334.3422.3422,0,0,0,.2988.3428c2.4258.4746,2.4873.457,2.795,2.7861A.3357.3357,0,0,0,19.5986,13.0742Zm-6.8027,8.5342a7.546,7.546,0,0,0,7.1895-4.5439.7971.7971,0,0,0-.0528-.8965.6984.6984,0,0,0-.7734-.044,6.8505,6.8505,0,0,1-2.584.4571c-3.9375,0-6.5215-2.4961-6.5215-6.3457a7.1785,7.1785,0,0,1,.5274-2.8213.8068.8068,0,0,0,.0087-.87c-.1757-.2022-.5009-.2286-.9052-.07a7.8438,7.8438,0,0,0-4.7461,7.3653A7.5688,7.5688,0,0,0,12.7959,21.6084Z" transform="translate(-4.9385 -2.6855)"/></svg>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="py-search-wrapper">
+                <div class="py-search">
+                    <div class="search-logo">
+                        <svg class="nav-svg nav-svg-search" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.7608 16.919"><path d="M12.5322,19.0332a6.8735,6.8735,0,0,0,3.7969-1.1426l3.85,3.8584a1.3157,1.3157,0,0,0,.9317.3692,1.3,1.3,0,0,0,.9052-2.1973L18.1924,16.08a6.86,6.86,0,0,0,1.2568-3.9639,6.917,6.917,0,1,0-6.917,6.917Zm0-1.8457a5.0713,5.0713,0,1,1,5.0713-5.0713A5.09,5.09,0,0,1,12.5322,17.1875Z" transform="translate(-5.6152 -5.1992)"/></svg>
+                    </div>
+                    <div class="search-input-wrapper">
+                        <input type="text" placeholder="type here to search" class="search-input">
+                    </div>
+                    <div class="search-cancel-btn">
+                        <div class="cancel-btn-line cancel-btn-line-1"></div>
+                        <div class="cancel-btn-line cancel-btn-line-2"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Search result wrapper -->
+    <div class="search-result-wrapper">
+        <div class="search-result">
+            <header class="search-result-header">
+                <div class="result-header-text-wrapper">
+                    <span class="result-header-text">QUICK LINKS</span>
+                </div>
+            </header>
+            <div class="result-body">
+                <ul class="result-links">
+                    <li class="result-links-items">
+                        <a href="" class="result-link-anchor">
+                            <span class="result-link-anchor-text">String</span>
+                        </a>
+                    </li>
+                    <li class="result-links-items">
+                        <a href="" class="result-link-anchor">
+                            <span class="result-link-anchor-text">List</span>
+                        </a>
+                    </li>
+                    <li class="result-links-items">
+                        <a href="" class="result-link-anchor">
+                            <span class="result-link-anchor-text">Function</span>
+                        </a>
+                    </li>
+                    <li class="result-links-items">
+                        <a href="" class="result-link-anchor">
+                            <span class="result-link-anchor-text">File Handling</span>
+                        </a>
+                    </li>
+                    <li class="result-links-items">
+                        <a href="" class="result-link-anchor">
+                            <span class="result-link-anchor-text">Classes</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- all content -->
+    <div class="all-content-wrapper">
+        <div class="all-content">
+
+        <!-- side nav -->
+            <div id="side-nav-wrapper" class="side-nav-wrapper">
+                <div class="side-nav">
+                    <!-- search -->
+                    <div class="side-nav-search-wrapper">
+                        <div id="side-nav-search" class="side-nav-search">
+                            <div class="side-nav-search-logo">
+                                <svg class="nav-svg nav-svg-search side-nav-svg-search" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.7608 16.919"><path d="M12.5322,19.0332a6.8735,6.8735,0,0,0,3.7969-1.1426l3.85,3.8584a1.3157,1.3157,0,0,0,.9317.3692,1.3,1.3,0,0,0,.9052-2.1973L18.1924,16.08a6.86,6.86,0,0,0,1.2568-3.9639,6.917,6.917,0,1,0-6.917,6.917Zm0-1.8457a5.0713,5.0713,0,1,1,5.0713-5.0713A5.09,5.09,0,0,1,12.5322,17.1875Z" transform="translate(-5.6152 -5.1992)"/></svg>
+                            </div>
+                            <div class="side-nav-search-input-wrapper">
+                                <input type="text" placeholder="type here to search" id="side-nav-search-input" class="side-nav-search-input">
+                            </div>
+                            <div id="side-nav-search-text-remove-btn" class="side-nav-search-text-remove-btn">
+                                <div class="side-nav-text-remove-btn-line side-nav-text-remove-btn-line-1"></div>
+                                <div class="side-nav-text-remove-btn-line side-nav-text-remove-btn-line-2"></div>
+                            </div>
+                        </div>
+                        <div id="side-nav-search-cancel-btn-wrapper" class="side-nav-search-cancel-btn-wrapper">
+                            <div class="side-nav-search-cancel-btn-text-wrapper">
+                                <p id="side-nav-search-cancel-btn-text" class="side-nav-search-cancel-btn-text">Cancel</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- search result -->
+                    <div id="mobile-search-result-wrapper" class="mobile-search-result-wrapper">
+                        <div class="mobile-search-result">
+                            <header class="search-result-header">
+                                <div class="result-header-text-wrapper">
+                                    <span class="result-header-text">QUICK LINKS</span>
+                                </div>
+                            </header>
+                            <div class="result-body">
+                                <ul class="result-links">
+                                    <li class="result-links-items">
+                                        <a href="" class="result-link-anchor">
+                                            <span class="result-link-anchor-text">String</span>
+                                        </a>
+                                    </li>
+                                    <li class="result-links-items">
+                                        <a href="" class="result-link-anchor">
+                                            <span class="result-link-anchor-text">List</span>
+                                        </a>
+                                    </li>
+                                    <li class="result-links-items">
+                                        <a href="" class="result-link-anchor">
+                                            <span class="result-link-anchor-text">Function</span>
+                                        </a>
+                                    </li>
+                                    <li class="result-links-items">
+                                        <a href="" class="result-link-anchor">
+                                            <span class="result-link-anchor-text">File Handling</span>
+                                        </a>
+                                    </li>
+                                    <li class="result-links-items">
+                                        <a href="" class="result-link-anchor">
+                                            <span class="result-link-anchor-text">Classes</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- links and topics -->
+                    <div id="side-nav-navigation" class="side-nav-navigation">
+                        <!-- links -->
+                        <div class="side-nav-link-wrapper">
+                            <div class="side-nav-link">
+                                <div id="side-nav-link-label" class="side-nav-link-label">
+                                    <div class="side-nav-link-label-text">LINKS</div>
+                                </div>
+                                <ul class="side-nav-link-list">
+                                    <li class="side-nav-link-list-item">
+                                        <a href="" class="side-nav-link-list-item-anchor">
+                                            <span class="side-nav-link-list-item-anchor-span">Number System</span>
+                                        </a>
+                                    </li>
+                                    <li class="side-nav-link-list-item">
+                                        <a href="" class="side-nav-link-list-item-anchor">
+                                            <span class="side-nav-link-list-item-anchor-span">Boolean Logic</span>
+                                        </a>
+                                    </li>
+                                    <li class="side-nav-link-list-item">
+                                        <a href="" class="side-nav-link-list-item-anchor">
+                                            <span class="side-nav-link-list-item-anchor-span">Python</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- topic -->
+                        <div class="side-nav-topic-wrapper">
+                            <div class="side-nav-topic">
+                                <div id="side-nav-topic-label" class="side-nav-topic-label">
+                                    <div class="side-nav-topic-label-text">TOPICS</div>
+                                </div>
+                                <ul class="side-nav-topic-list">
+                                    <li class="side-nav-topic-list-item">
+                                        <div class="side-nav-topic-list-item-anchor-wrapper">
+                                            <a href="########" class="side-nav-topic-list-item-anchor">
+                                                <span class="side-nav-topic-list-item-anchor-span">Getting Started</span>
+                                            </a>
+                                            <div class="side-nav-subtopic-active-btn-wrapper">
+                                                <div class="side-nav-subtopic-active-btn">
+                                                    <div class="side-nav-subtopic-active-btn-line side-nav-subtopic-active-btn-line-1"></div>
+                                                    <div class="side-nav-subtopic-active-btn-line side-nav-subtopic-active-btn-line-2"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="side-nav-subtopic">
+                                            <ul class="side-nav-subtopic-list">
+                                                <li class="side-nav-subtopic-list-item">
+                                                    <a href="" class="side-nav-subtopic-anchor">
+                                                        <span class="side-nav-subtopic-anchor-text">Introduction</span>
+                                                    </a>
+                                                </li>
+                                                <li class="side-nav-subtopic-list-item">
+                                                    <a href="" class="side-nav-subtopic-anchor">
+                                                        <span class="side-nav-subtopic-anchor-text">Installing</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="side-nav-topic-list-item">
+                                        <div class="side-nav-topic-list-item-anchor-wrapper">
+                                            <a href="########" class="side-nav-topic-list-item-anchor">
+                                                <span class="side-nav-topic-list-item-anchor-span">Getting Started</span>
+                                            </a>
+                                            <div class="side-nav-subtopic-active-btn-wrapper">
+                                                <div class="side-nav-subtopic-active-btn">
+                                                    <div class="side-nav-subtopic-active-btn-line side-nav-subtopic-active-btn-line-1"></div>
+                                                    <div class="side-nav-subtopic-active-btn-line side-nav-subtopic-active-btn-line-2"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="side-nav-subtopic">
+                                            <ul class="side-nav-subtopic-list">
+                                                <li class="side-nav-subtopic-list-item">
+                                                    <a href="" class="side-nav-subtopic-anchor">
+                                                        <span class="side-nav-subtopic-anchor-text">Introduction</span>
+                                                    </a>
+                                                </li>
+                                                <li class="side-nav-subtopic-list-item">
+                                                    <a href="" class="side-nav-subtopic-anchor">
+                                                        <span class="side-nav-subtopic-anchor-text">Installing</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="side-nav-topic-list-item">
+                                        <div class="side-nav-topic-list-item-anchor-wrapper">
+                                            <a href="########" class="side-nav-topic-list-item-anchor">
+                                                <span class="side-nav-topic-list-item-anchor-span">Getting Started</span>
+                                            </a>
+                                            <div class="side-nav-subtopic-active-btn-wrapper">
+                                                <div class="side-nav-subtopic-active-btn">
+                                                    <div class="side-nav-subtopic-active-btn-line side-nav-subtopic-active-btn-line-1"></div>
+                                                    <div class="side-nav-subtopic-active-btn-line side-nav-subtopic-active-btn-line-2"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="side-nav-subtopic">
+                                            <ul class="side-nav-subtopic-list">
+                                                <li class="side-nav-subtopic-list-item">
+                                                    <a href="" class="side-nav-subtopic-anchor">
+                                                        <span class="side-nav-subtopic-anchor-text">Introduction</span>
+                                                    </a>
+                                                </li>
+                                                <li class="side-nav-subtopic-list-item">
+                                                    <a href="" class="side-nav-subtopic-anchor">
+                                                        <span class="side-nav-subtopic-anchor-text">Installing</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="side-nav-topic-list-item">
+                                        <div class="side-nav-topic-list-item-anchor-wrapper">
+                                            <a href="########" class="side-nav-topic-list-item-anchor">
+                                                <span class="side-nav-topic-list-item-anchor-span">Getting Started</span>
+                                            </a>
+                                            <div class="side-nav-subtopic-active-btn-wrapper">
+                                                <div class="side-nav-subtopic-active-btn">
+                                                    <div class="side-nav-subtopic-active-btn-line side-nav-subtopic-active-btn-line-1"></div>
+                                                    <div class="side-nav-subtopic-active-btn-line side-nav-subtopic-active-btn-line-2"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="side-nav-subtopic">
+                                            <ul class="side-nav-subtopic-list">
+                                                <li class="side-nav-subtopic-list-item">
+                                                    <a href="" class="side-nav-subtopic-anchor">
+                                                        <span class="side-nav-subtopic-anchor-text">Introduction</span>
+                                                    </a>
+                                                </li>
+                                                <li class="side-nav-subtopic-list-item">
+                                                    <a href="" class="side-nav-subtopic-anchor">
+                                                        <span class="side-nav-subtopic-anchor-text">Installing</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="side-nav-topic-list-item">
+                                        <div class="side-nav-topic-list-item-anchor-wrapper">
+                                            <a href="########" class="side-nav-topic-list-item-anchor">
+                                                <span class="side-nav-topic-list-item-anchor-span">Getting Started</span>
+                                            </a>
+                                            <div class="side-nav-subtopic-active-btn-wrapper">
+                                                <div class="side-nav-subtopic-active-btn">
+                                                    <div class="side-nav-subtopic-active-btn-line side-nav-subtopic-active-btn-line-1"></div>
+                                                    <div class="side-nav-subtopic-active-btn-line side-nav-subtopic-active-btn-line-2"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="side-nav-subtopic">
+                                            <ul class="side-nav-subtopic-list">
+                                                <li class="side-nav-subtopic-list-item">
+                                                    <a href="" class="side-nav-subtopic-anchor">
+                                                        <span class="side-nav-subtopic-anchor-text">Introduction</span>
+                                                    </a>
+                                                </li>
+                                                <li class="side-nav-subtopic-list-item">
+                                                    <a href="" class="side-nav-subtopic-anchor">
+                                                        <span class="side-nav-subtopic-anchor-text">Installing</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-text"></div>
+        </div>
+    </footer>
+
+    <script src="../src/js/nav.js"></script>
+    <script src="../src/js/search.js"></script>
+
+</body>
+</html>

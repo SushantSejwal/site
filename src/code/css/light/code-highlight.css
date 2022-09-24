@@ -1,0 +1,202 @@
+code[class*=language-],
+pre[class*=language-] {
+    color: rgb(93, 93, 95);
+    background: 0 0;
+    font-family: 'Monolisa', monospace;
+    font-size: 16px;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.65;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    font-variant-ligatures: none;
+}
+
+
+pre[class*=language-] {
+    padding: 0px 25px 0px 5px;
+    width: 100%;
+    font-family: 'MonoLisa', monospace;
+}
+
+pre[class*=language-]::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+pre[class*=language-]::-webkit-scrollbar-track {
+    background-color: rgba(25, 32, 46, 0);
+    border-radius: 5px;
+    padding: 10px;
+    -webkit-border-radius: 5px 5px 4px 4px 2px;
+    -moz-border-radius: 5px 5px 4px 4px 2px;
+    -ms-border-radius: 5px 5px 4px 4px 2px;
+    -o-border-radius: 5px 5px 4px 4px 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+pre[class*=language-]::-webkit-scrollbar-thumb {
+    background: rgba(189, 192, 197, 0.58);
+    border-radius: 2px;
+    margin-left: 10px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+pre[class*=language-]::-webkit-scrollbar-thumb:hover {
+    background: #4d5666;
+}
+pre[class*=language-]::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0);
+}
+
+:not(pre)>code[class*=language-],
+pre[class*=language-] {
+    background: rgb(235, 238, 245);
+}
+
+:not(pre)>code[class*=language-] {
+    padding: .1em;
+    border-radius: .3em;
+    white-space: normal
+}
+
+pre[class*=language-] ::selection{
+    background-color: rgba(0, 101, 255, 0.247);
+}
+
+.token.comment{
+    color: rgb(169, 169, 170);
+    font-style: italic;
+}
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: rgb(169, 169, 170);
+}
+
+.token.punctuation {
+	color: rgb(142, 142, 144);
+}
+
+.token.property{
+    color: rgb(93, 93, 95);
+}
+
+.token.boolean{
+    color: rgb(200, 56, 198);
+}
+.token.number,
+.token.constant{
+    color: rgb(255, 109, 18);
+}
+.token.tag,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.char,
+.token.inserted {
+    color: rgb(83, 160, 83);
+}
+.token.string{
+    color: rgb(83, 160, 83);
+    font-style: italic;
+}
+.token.builtin{
+    color: rgb(67, 122, 237);
+}
+
+.token.operator{
+    color: rgb(0, 190, 196);
+}
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #9a6e3a;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: rgb(200, 56, 198);
+}
+
+.token.function,
+.token.class-name {
+	color: rgb(124, 77, 255);
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+.token.punctuation.brace-hover,
+.token.punctuation.brace-selected {
+    outline: solid 1px
+}
+
+.token.punctuation.brace-level-1,
+.token.punctuation.brace-level-4,
+.token.punctuation.brace-level-7,
+.token.punctuation.brace-level-10 {
+    color: rgb(200, 56, 198);
+    opacity: 1
+}
+
+.token.punctuation.brace-level-2,
+.token.punctuation.brace-level-5,
+.token.punctuation.brace-level-8,
+.token.punctuation.brace-level-11 {
+    color: rgb(67, 122, 238);
+    opacity: 1
+}
+
+.token.punctuation.brace-level-3,
+.token.punctuation.brace-level-6,
+.token.punctuation.brace-level-9,
+.token.punctuation.brace-level-12 {
+    color: rgb(255, 109, 18);
+    opacity: 1
+}
+
+
+
+.keyword.keyword-print {
+    color: rgb(67, 122, 237);
+    /* font-weight: 500; */
+}
+.keyword.keyword-import {
+    color: rgb(200, 56, 198);
+}
