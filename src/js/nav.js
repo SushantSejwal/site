@@ -76,7 +76,7 @@
     //         let subtopic_list_height = subtopic_list[index].clientHeight;
     //         subtopic_wrapper[index].style.height = `${subtopic_list_height + 25}px`;
     //     } else{
-    //         subtopic_wrapper[index].style.height = `0px`;
+    //         subtopic_wrapper[index].style.height = `0px`; sushant
     //     }
     // }
     document.querySelector('.side-nav-topic-list').addEventListener('click', (e) => {
