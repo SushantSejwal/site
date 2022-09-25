@@ -410,6 +410,10 @@
 .side-nav-topic-list-item-anchor:hover {
     color: var(--color-link);
 }
+.side-nav-subtopic{
+    height :0px;
+    overflow: hidden;
+}
 .side-nav-subtopic-list{
     margin: 5px 25px 20px 25px;
     list-style-type: none;

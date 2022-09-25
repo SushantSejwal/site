@@ -33,54 +33,67 @@
 
 // Side nav
 ! function(){
-    let hamburger = document.getElementsByClassName('side-nav-subtopic-active-btn-wrapper');
-    let hamburger_bread_wrapper = document.getElementsByClassName('side-nav-subtopic-active-btn');
-    let hamburger_bread = document.getElementsByClassName('side-nav-subtopic-active-btn-line');
-    let subtopic_wrapper = document.getElementsByClassName('side-nav-subtopic');
-    let subtopic_list = document.getElementsByClassName('side-nav-subtopic-list');
-    let transition_time;
 
-    // for (let i = 0; i < hamburger.length; i++){
-    //     subtopic_wrapper[i].style.height = '0px';
-    //     subtopic_wrapper[i].style.overflow = 'hidden';
+    let side_nav_list = document.querySelector('.side-nav-topic-list');
+    // let subtopics = document.getElementsByClassName('side-nav-subtopic-list');
 
-    //     transition_time = `${Math.ceil((subtopic_list[i].clientHeight) * (6 / 110))}`;
-    //     if (transition_time.length  ===  1){
-    //         subtopic_wrapper[i].style.transition = `height 0.${transition_time}s cubic-bezier(0.86, 0, 0.07, 1)`;
-    //     }else if (transition_time.length > 1){
-    //         transition_time = `${Math.ceil((subtopic_list[i].clientHeight) * (4 / 110))}`;
-    //         let tr_time = '';
-    //         for (let a = 0; a < transition_time.length; a++){
-    //             if(transition_time.length - 1 === a){
-    //                 tr_time = tr_time + '.';
-    //                 tr_time = tr_time + transition_time[a];
-    //             }else{
-    //                 tr_time = tr_time + transition_time[a];
-    //             }
-    //         }
-    //         subtopic_wrapper[i].style.transition = `height ${tr_time}s cubic-bezier(0.86, 0, 0.07, 1)`;
-    //     }
+        side_nav_list.addEventListener('click', (e) => {
+        if (e.target.classList.contains('side-nav-subtopic-active-btn-wrapper') || e.target.classList.contains('side-nav-subtopic-active-btn') || e.target.classList.contains('side-nav-subtopic-active-btn-line')){
+            let hamburger_line_wrapper, hamburger_line_1, hamburger_line_2, subtopic, subtopic_list, transition_time;
+
+            if (e.target.classList.contains('side-nav-subtopic-active-btn-wrapper')){
+                hamburger_line_wrapper = e.target.firstChild.nextSibling;
+                hamburger_line_1 = hamburger_line_wrapper.firstChild.nextSibling;
+                hamburger_line_2 = hamburger_line_1.nextSibling.nextSibling;
+                subtopic = e.target.parentNode.nextSibling.nextSibling;
+                subtopic_list = subtopic.firstChild.nextSibling;
+
+            } else if (e.target.classList.contains('side-nav-subtopic-active-btn')){
+                hamburger_line_wrapper = e.target;
+                hamburger_line_1 = hamburger_line_wrapper.firstChild.nextSibling;
+                hamburger_line_2 = hamburger_line_1.nextSibling.nextSibling;
+                subtopic = hamburger_line_wrapper.parentNode.parentNode.nextSibling.nextSibling;
+                subtopic_list = subtopic.firstChild.nextSibling;
+
+            }  else if (e.target.classList.contains('side-nav-subtopic-active-btn-line')){
+                hamburger_line_wrapper = e.target.parentNode;
+                hamburger_line_1 = hamburger_line_wrapper.firstChild.nextSibling;
+                hamburger_line_2 = hamburger_line_1.nextSibling.nextSibling;
+                subtopic = hamburger_line_wrapper.parentNode.parentNode.nextSibling.nextSibling;
+                subtopic_list = subtopic.firstChild.nextSibling;
+            }
+
+            transition_time = `${Math.ceil((subtopic_list.clientHeight) * (6 / 110))}`;
+            if (transition_time.length  ===  1){
+                subtopic.style.transition = `height 0.${transition_time}s cubic-bezier(0.86, 0, 0.07, 1)`;
+            }else if (transition_time.length > 1){
+                transition_time = `${Math.ceil((subtopic_list.clientHeight) * (4 / 110))}`;
+                let tr_time = '';
+                for (let a = 0; a < transition_time.length; a++){
+                    if(transition_time.length - 1 === a){
+                        tr_time = tr_time + '.';
+                        tr_time = tr_time + transition_time[a];
+                    }else{
+                        tr_time = tr_time + transition_time[a];
+                    }
+                }
+                subtopic.style.transition = `height ${tr_time}s cubic-bezier(0.86, 0, 0.07, 1)`;
+            }
+
+            hamburger_line_1.classList.toggle('topic-hamburger-active');
+            hamburger_line_2.classList.toggle('topic-hamburger-active');
+            hamburger_line_wrapper.classList.toggle('topic-hamburger-active');
+
+            subtopic.classList.toggle('topic-hamburger-active');
+            if (subtopic.classList.contains('topic-hamburger-active')) {
+                let subtopic_list_height = subtopic_list.clientHeight;
+                subtopic.style.height = `${subtopic_list_height + 25}px`;
+            } else{
+                subtopic.style.height = `0px`;
+            }
+            
+        }
         
-    //     hamburger[i].addEventListener('click', () => onHamburgerClick(i))
-    // }
-    
-    // function onHamburgerClick(index){
-    //     let index_1 = index * 2;
-    //     let index_2 = index_1 + 1;
-    //     hamburger_bread[index_1].classList.toggle('topic-hamburger-active');
-    //     hamburger_bread[index_2].classList.toggle('topic-hamburger-active');
-    //     hamburger_bread_wrapper[index].classList.toggle('topic-hamburger-active');
-        
-    //     subtopic_wrapper[index].classList.toggle('topic-hamburger-active');
-    //     if (subtopic_wrapper[index].classList.contains('topic-hamburger-active')) {
-    //         let subtopic_list_height = subtopic_list[index].clientHeight;
-    //         subtopic_wrapper[index].style.height = `${subtopic_list_height + 25}px`;
-    //     } else{
-    //         subtopic_wrapper[index].style.height = `0px`; sushant
-    //     }
-    // }
-    document.querySelector('.side-nav-topic-list').addEventListener('click', (e) => {
-        console.log(e.target)
     })
 }();
 
