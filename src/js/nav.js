@@ -38,28 +38,35 @@
     // let subtopics = document.getElementsByClassName('side-nav-subtopic-list');
 
         side_nav_list.addEventListener('click', (e) => {
-        if (e.target.classList.contains('side-nav-subtopic-active-btn-wrapper') || e.target.classList.contains('side-nav-subtopic-active-btn') || e.target.classList.contains('side-nav-subtopic-active-btn-line')){
+        if (e.target.classList.contains('side-nav-subtopic-active-btn-wrapper') || e.target.classList.contains('side-nav-subtopic-active-btn') || e.target.classList.contains('side-nav-subtopic-active-btn-container') || e.target.classList.contains('side-nav-subtopic-active-btn-line')){
             let hamburger_line_wrapper, hamburger_line_1, hamburger_line_2, subtopic, subtopic_list, transition_time;
 
             if (e.target.classList.contains('side-nav-subtopic-active-btn-wrapper')){
-                hamburger_line_wrapper = e.target.firstChild.nextSibling;
+                hamburger_line_wrapper = e.target.firstChild.nextSibling.firstChild.nextSibling;
                 hamburger_line_1 = hamburger_line_wrapper.firstChild.nextSibling;
                 hamburger_line_2 = hamburger_line_1.nextSibling.nextSibling;
                 subtopic = e.target.parentNode.nextSibling.nextSibling;
+                subtopic_list = subtopic.firstChild.nextSibling;
+
+            } else if (e.target.classList.contains('side-nav-subtopic-active-btn-container')){
+                hamburger_line_wrapper = e.target.firstChild.nextSibling;
+                hamburger_line_1 = hamburger_line_wrapper.firstChild.nextSibling;
+                hamburger_line_2 = hamburger_line_1.nextSibling.nextSibling;
+                subtopic = hamburger_line_wrapper.parentNode.parentNode.parentNode.nextSibling.nextSibling;
                 subtopic_list = subtopic.firstChild.nextSibling;
 
             } else if (e.target.classList.contains('side-nav-subtopic-active-btn')){
                 hamburger_line_wrapper = e.target;
                 hamburger_line_1 = hamburger_line_wrapper.firstChild.nextSibling;
                 hamburger_line_2 = hamburger_line_1.nextSibling.nextSibling;
-                subtopic = hamburger_line_wrapper.parentNode.parentNode.nextSibling.nextSibling;
+                subtopic = hamburger_line_wrapper.parentNode.parentNode.parentNode.nextSibling.nextSibling;
                 subtopic_list = subtopic.firstChild.nextSibling;
 
             }  else if (e.target.classList.contains('side-nav-subtopic-active-btn-line')){
                 hamburger_line_wrapper = e.target.parentNode;
                 hamburger_line_1 = hamburger_line_wrapper.firstChild.nextSibling;
                 hamburger_line_2 = hamburger_line_1.nextSibling.nextSibling;
-                subtopic = hamburger_line_wrapper.parentNode.parentNode.nextSibling.nextSibling;
+                subtopic = hamburger_line_wrapper.parentNode.parentNode.parentNode.nextSibling.nextSibling;
                 subtopic_list = subtopic.firstChild.nextSibling;
             }
 
@@ -110,7 +117,7 @@
     search_input.addEventListener('input', (event) => {
         if (event.target.value.length){
             search_remove.style.display = 'flex';
-            search_remove.addEventListener('click', () => { event.target.value = ''; search_remove.style.display = 'none'});
+            search_remove.addEventListener('click', () => { event.target.value = ''; search_remove.style.display = 'none'; search_input.focus()});
         } else{ search_remove.style.display = 'none'; }
     });
 

@@ -389,6 +389,7 @@
 
 .side-nav-topic-list-item:last-of-type {
     border-bottom: none;
+    padding-bottom: 75px;
 }
 
 .side-nav-topic-list-item-anchor {
@@ -469,12 +470,19 @@
     -moz-transition: opacity 0.15s ease-in-out;
     -ms-transition: opacity 0.15s ease-in-out;
     -o-transition: opacity 0.15s ease-in-out;
-    border-left: 1px solid #ddd;
-    /* width: 40px; */
+    width: 45px;
     aspect-ratio: 1 / 1;
 }
 .side-nav-subtopic-active-btn-wrapper:hover{
     opacity: 1;
+}
+.side-nav-subtopic-active-btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    border-left: 1px solid #ddd;
 }
 .side-nav-subtopic-active-btn{
     width: 14px;
